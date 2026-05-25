@@ -1,0 +1,163 @@
+body{
+    background-image: url("cinema.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: white;
+     font-style: italic;
+    font-size: 56px;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 
+    0 0 5px  black,
+    0 0 10px black,
+    0 0 20px black,
+    0 0 40px black;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.topbar .left a {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.topbar .left a:hover {
+    color: lightgray;
+}
+
+.topbar .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.quote {
+    font-family: 79px;
+    text-align: center;
+    font-style: italic;
+    color: lightgray;
+    margin-bottom: 20px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    text-shadow:
+    0 0 5px  black,
+    0 0 10px black,
+    0 0 20px black,
+    0 0 40px black;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: darkred;
+}
+.search-filter {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.seat-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.seat-table td {
+    border: 1px solid black;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.seat-table td:hover {
+    background-color: orange;
+}
+.movie-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+.movies {
+    display: flex;
+    justify-content: center;
+}
+
+.movie-table {
+    margin-top: 20px;
+}
+.movie-table td {
+    border: none;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movie-table img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.movie-table td:hover {
+    transform: scale(1.1);
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    margin: 15% auto;
+    text-align: center;
+    border-radius: 10px;
+}
+#seat-selection {
+    display: none;
+}
+.close { float: right;
+     font-size: 20px; 
+     cursor: pointer; 
+    } 
+     .seat { 
+        display: inline-block; 
+        padding: 10px;
+         margin: 5px; 
+         border: 1px solid black;
+          cursor: pointer; 
+     }
+     .p {
+        font-size: 18px;
+        font-weight: bold;
+         font-style: italic;
+        text-shadow:
+        0 0 0 5px white,
+        0 0 0 10px white,
+        0 0 0 20px white,
+        0 0 0 40px white;
+     }
